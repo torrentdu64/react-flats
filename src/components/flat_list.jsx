@@ -10,10 +10,11 @@ class FlatList extends Component {
       return ( <Flat name={flat.name}
                      price={flat.price}
                      priceCurrency={flat.priceCurrency}
-                     imageUrl={flat.imageUrl} /> )
+                     imageUrl={flat.imageUrl}
+                     key={flat.name} /> )
     })
 
   }
 }
 
-export default FlatList
+export default FlatList;
